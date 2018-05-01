@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BlockRoulette gaming table</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<style>
+			#game-table th {
+        text-align: center;
+			}
+      .transaction {
+        text-align: center;
+          font-size: 16pt;
+      }
+      input.x1, input.x2 {
+        font-size: 20pt; font-family: monospace; text-transform: uppercase;
+      }
+      .x1 { color: #673ab7; }
+      .x2 { color: #009688; }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>BlockRoulette gaming table</h1>
+        <hr/>
+        <div class="transaction">
+          transaction ID: <span class="text-info">
+            <input class="x1" type="text" id="inpX1" placeholder="X1" size="1" />
+            <input class="x2" type="text" id="inpX2" placeholder="X2" size="1" />
+        </div>
+        <hr>
+				<table class="table table-bordered table-condensed table-hover" id="game-table">
+					<tr>
+						<th colspan="4"></th>
+						<th class="x2">0</th>
+						<th class="x2">1</th>
+						<th class="x2">2</th>
+						<th class="x2">3</th>
+						<th class="x2">4</th>
+						<th class="x2">5</th>
+						<th class="x2">6</th>
+						<th class="x2">7</th>
+						<th class="x2">8</th>
+						<th class="x2">9</th>
+						<th class="x2">A</th>
+						<th class="x2">B</th>
+						<th class="x2">C</th>
+						<th class="x2">D</th>
+						<th class="x2">E</th>
+						<th class="x2">F</th>
+            <td colspan="2"></td>
+					</tr>
+					<tr class="data-x1" data-x1="048C">
+						<th class="x1">0</th><th class="x1">4</th><th class="x1">8</th><th class="x1">C</th>
+						<td data-x2="0"></td><td data-x2="1"></td><td data-x2="2"></td><td data-x2="3"></td>
+						<td data-x2="4"></td><td data-x2="5"></td><td data-x2="6"></td><td data-x2="7"></td>
+						<td data-x2="8"></td><td data-x2="9"></td><td data-x2="A"></td><td data-x2="B"></td>
+						<td data-x2="C"></td><td data-x2="D"></td><td data-x2="E"></td><td data-x2="F"></td>
+            <td></td><td rowspan="2"></td>
+					</tr>
+					<tr class="data-x1" data-x1="159D">
+						<th class="x1">1</th><th class="x1">5</th><th class="x1">9</th><th class="x1">D</th>
+						<td data-x2="0"></td><td data-x2="1"></td><td data-x2="2"></td><td data-x2="3"></td>
+						<td data-x2="4"></td><td data-x2="5"></td><td data-x2="6"></td><td data-x2="7"></td>
+						<td data-x2="8"></td><td data-x2="9"></td><td data-x2="A"></td><td data-x2="B"></td>
+						<td data-x2="C"></td><td data-x2="D"></td><td data-x2="E"></td><td data-x2="F"></td>
+            <td></td>
+					</tr>
+					<tr  class="data-x1" data-x1="26AE">
+						<th class="x1">2</th><th class="x1">6</th><th class="x1">A</th><th class="x1">E</th>
+						<td data-x2="0"></td><td data-x2="1"></td><td data-x2="2"></td><td data-x2="3"></td>
+						<td data-x2="4"></td><td data-x2="5"></td><td data-x2="6"></td><td data-x2="7"></td>
+						<td data-x2="8"></td><td data-x2="9"></td><td data-x2="A"></td><td data-x2="B"></td>
+						<td data-x2="C"></td><td data-x2="D"></td><td data-x2="E"></td><td data-x2="F"></td>
+            <td></td><td rowspan="2"></td>
+					</tr>
+					<tr  class="data-x1" data-x1="37BF">
+						<th class="x1">3</th><th class="x1">7</th><th class="x1">B</th><th class="x1">F</th>
+						<td data-x2="0"></td><td data-x2="1"></td><td data-x2="2"></td><td data-x2="3"></td>
+						<td data-x2="4"></td><td data-x2="5"></td><td data-x2="6"></td><td data-x2="7"></td>
+						<td data-x2="8"></td><td data-x2="9"></td><td data-x2="A"></td><td data-x2="B"></td>
+						<td data-x2="C"></td><td data-x2="D"></td><td data-x2="E"></td><td data-x2="F"></td>
+            <td></td>
+					</tr>
+				</table>
+        <hr>
+        <form class="form">
+          <button type="button" class="btn btn-success" id="btnClear">Clear</button>
+          <button type="button" class="btn btn-primary " id="btnPlay">Play</button>
+        </form>
+				</div>
+			</div></div>
+    </div>
+    <script>
+      $(function(){
+        var x1, x2;
+        $('td').prop('contenteditable', 'true');
+
+        function clear() {
+        
+            $('td').html('');
+            $('td.info').removeClass('info');
+            $('tr.info').removeClass('info');
+        }
+
+        $('#btnClear').on('click', clear);
+
+        function randXX() {
+          x1 = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'][Math.floor(Math.random()*16)]
+          x2 = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'][Math.floor(Math.random()*16)]
+          $('#inpX1').val(x1);
+          $('#inpX2').val(x2);
+        
+        }
+
+
+        function play() {
+          clear();
+            randXX();
+          $('tr.data-x1').each(function(){
+            var _x1 = $(this).data('x1')
+            if (_x1.includes(x1)) {
+              $(this).addClass('info');
+            }
+          })
+
+          $('td[data-x2=' + x2 + ']').addClass('info');
+
+          $('td').not(':empty').each(function(){
+            var _x2 = $(this).data('x2')
+            $('tr.data-x1').each(function(){
+              var _x1 = $(this).data('x1')
+            })
+          })
+        }
+        
+        $('#btnPlay').on('click', function() {
+            play()
+        });
+            randXX();
+          play()
+      })
+    </script>
+  </body>
+</html>
